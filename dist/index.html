@@ -1,11 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<script defer src="main.js"></script></head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <h1>Weather App</h1>
+      </div>
+
+      <div class="main">
+        <div>
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name"
+            autofocus
+          />
+          <button id="search-btn">Search</button>
+        </div>
+
+        <div id="weather-result">
+          <div class="today-weather">
+            <h4>Today's Weather</h4>
+            <p id="today-description"></p>
+            <p id="today-temp"></p>
+            <p id="min-max"></p>
+            <p id="feels-like"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
